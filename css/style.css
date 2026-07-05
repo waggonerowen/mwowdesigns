@@ -91,7 +91,6 @@ h3 { font-size: 1.28rem; letter-spacing: -0.01em; line-height: 1.25; }
 
 .accent {
   color: var(--sky);
-  font-style: italic;
   font-weight: 800;
 }
 
@@ -227,10 +226,10 @@ body.hero-live {
   height: 100%;
   object-fit: cover;
 }
-/* the mini homepage that boots up on the MacBook's screen */
+/* what boots up on the MacBook's screen — styled like the section headers */
 .screen-site {
   position: absolute;
-  border-radius: 6px;
+  border-radius: 4px;
   background: #101216;
   overflow: hidden;
   opacity: 0;
@@ -238,41 +237,33 @@ body.hero-live {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 8%;
-  box-shadow: 0 0 60px rgba(143, 198, 239, 0.35);
+  padding: 0 9%;
+  box-shadow: 0 0 22px rgba(143, 198, 239, 0.28);
 }
 .ss-eyebrow {
   font-family: var(--font-mono);
-  font-size: 0.3em;
-  letter-spacing: 0.2em;
+  font-size: 0.28em;
+  letter-spacing: 0.24em;
   text-transform: uppercase;
   color: var(--sky);
-  margin-bottom: 0.9em;
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+}
+.ss-eyebrow::before {
+  content: "";
+  width: 2em;
+  height: 1px;
+  background: var(--sky);
 }
 .ss-h1 {
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1em;
-  line-height: 1.06;
+  line-height: 1.08;
   letter-spacing: -0.02em;
   color: var(--bone);
-}
-.ss-h1 em { color: var(--sky); }
-.ss-btns { display: flex; gap: 1.2em; margin-top: 1.6em; align-items: center; }
-.ss-btn-solid {
-  background: var(--sky);
-  color: #101216;
-  border-radius: 99px;
-  font-size: 0.28em;
-  font-weight: 600;
-  padding: 0.7em 1.6em;
-}
-.ss-btn-ghost {
-  border: 1px solid var(--ink-2);
-  color: var(--bone);
-  border-radius: 99px;
-  font-size: 0.28em;
-  padding: 0.7em 1.6em;
 }
 .stage-veil {
   position: absolute;

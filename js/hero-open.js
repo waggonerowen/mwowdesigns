@@ -18,8 +18,8 @@
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* the MacBook screen's position inside the photo, as fractions of the image —
-     sized to the glass only, so the boot screen never covers the keyboard */
-  const SCREEN = { x0: 0.385, x1: 0.605, y0: 0.483, y1: 0.735 };
+     snug INSIDE the glass with bezel visible, never near the keyboard */
+  const SCREEN = { x0: 0.396, x1: 0.594, y0: 0.494, y1: 0.715 };
 
   /* map image fractions to viewport pixels under object-fit: cover */
   function screenRect() {
@@ -45,7 +45,7 @@
       site.style.top = `${r.top}px`;
       site.style.width = `${r.width}px`;
       site.style.height = `${r.height}px`;
-      site.style.fontSize = `${r.width * 0.085}px`; /* mini headline scales with the screen */
+      site.style.fontSize = `${r.width * 0.095}px`; /* headline scales with the screen */
     }
     zoomer.style.transformOrigin = `${r.left + r.width / 2}px ${r.top + r.height / 2}px`;
   }
