@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Quote — MWOW Designs</title>
   <meta name="description" content="Tell us about your business and get a free, no-pressure website quote from MWOW Designs." />
+  <meta property="og:title" content="Free Quote — MWOW Designs" />
+  <meta property="og:description" content="Tell us about your business — get a real price within one business day." />
+  <meta property="og:image" content="https://mwowdesigns.com/img/hero-penthouse-1k.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=7" />
+  <script>document.documentElement.dataset.theme = localStorage.getItem("mwow-theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");</script>
+  <link rel="stylesheet" href="css/style.css?v=13" />
 </head>
 <body>
 
@@ -17,8 +23,10 @@
       <a class="wordmark" href="index.html">MWOW <span class="designs">Designs</span></a>
       <nav>
         <ul class="nav-links">
+          <li><a href="audit.html">Free audit</a></li>
           <li><a href="examples.html">Examples</a></li>
           <li><a href="demo.html">Free demo</a></li>
+          <li><button class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark mode">☀</button></li>
           <li><a class="btn btn-sky btn-sm" href="quote.html" aria-current="page">Get a free quote</a></li>
         </ul>
       </nav>
@@ -33,6 +41,7 @@
         <h2>Five minutes now. A real price by tomorrow.</h2>
         <p class="lede">No jargon, no pressure, no obligation. Tell us what you do and we'll come back with a clear plan and a clear number.</p>
         <ul class="perk-list">
+          <li><span class="tick">✓</span><span><b>Launch pricing.</b> Full custom websites from <s>$1,000</s> <b>$750</b> — lock it in while the deal lasts.</span></li>
           <li><span class="tick">✓</span><span><b>Free means free.</b> The quote and the 48-hour homepage mockup cost nothing.</span></li>
           <li><span class="tick">✓</span><span><b>A real answer, fast.</b> You hear back within one business day.</span></li>
           <li><span class="tick">✓</span><span><b>No template talk.</b> Every quote is for a site designed from scratch, our way.</span></li>
@@ -87,6 +96,7 @@
       <a class="wordmark" href="index.html">MWOW <span class="designs">Designs</span></a>
       <span class="foot-tag">Make Websites Our Way™ · © <span id="yr"></span></span>
       <ul class="foot-links">
+        <li><a href="audit.html">Free audit</a></li>
         <li><a href="examples.html">Examples</a></li>
         <li><a href="quote.html">Free quote</a></li>
         <li><a href="demo.html">Free demo</a></li>
@@ -94,7 +104,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
   <script data-goatcounter="https://mwowdesigns.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free Demo — MWOW Designs</title>
   <meta name="description" content="Get your homepage designed free in 48 hours, then a 15-minute walkthrough call. No strings attached." />
+  <meta property="og:title" content="Free Demo — MWOW Designs" />
+  <meta property="og:description" content="A custom homepage mockup in 48 hours, free." />
+  <meta property="og:image" content="https://mwowdesigns.com/img/hero-penthouse-1k.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=7" />
+  <script>document.documentElement.dataset.theme = localStorage.getItem("mwow-theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");</script>
+  <link rel="stylesheet" href="css/style.css?v=13" />
 </head>
 <body>
 
@@ -17,8 +23,10 @@
       <a class="wordmark" href="index.html">MWOW <span class="designs">Designs</span></a>
       <nav>
         <ul class="nav-links">
+          <li><a href="audit.html">Free audit</a></li>
           <li><a href="examples.html">Examples</a></li>
           <li><a href="demo.html" aria-current="page">Free demo</a></li>
+          <li><button class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark mode">☀</button></li>
           <li><a class="btn btn-sky btn-sm" href="quote.html">Get a free quote</a></li>
         </ul>
       </nav>
@@ -82,6 +90,7 @@
       <a class="wordmark" href="index.html">MWOW <span class="designs">Designs</span></a>
       <span class="foot-tag">Make Websites Our Way™ · © <span id="yr"></span></span>
       <ul class="foot-links">
+        <li><a href="audit.html">Free audit</a></li>
         <li><a href="examples.html">Examples</a></li>
         <li><a href="quote.html">Free quote</a></li>
         <li><a href="demo.html">Free demo</a></li>
@@ -89,7 +98,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
   <script data-goatcounter="https://mwowdesigns.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Website Audit — MWOW Designs</title>
+  <meta name="description" content="Find out what your website is costing you. Free 5-point report card in 48 hours, or a $149 deep-dive teardown with a prioritized fix roadmap." />
+  <meta property="og:title" content="Free Website Audit — MWOW Designs" />
+  <meta property="og:description" content="Find out what your website is costing you — free 5-point report card in 48 hours." />
+  <meta property="og:image" content="https://mwowdesigns.com/img/hero-penthouse-1k.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
+  <script>document.documentElement.dataset.theme = localStorage.getItem("mwow-theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");</script>
+  <link rel="stylesheet" href="css/style.css?v=13" />
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="wordmark" href="index.html">MWOW <span class="designs">Designs</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="audit.html" aria-current="page">Free audit</a></li>
+          <li><a href="examples.html">Examples</a></li>
+          <li><a href="demo.html">Free demo</a></li>
+          <li><button class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark mode">☀</button></li>
+          <li><a class="btn btn-sky btn-sm" href="quote.html">Get a free quote</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="form-page" style="padding-bottom: clamp(40px, 6vw, 70px)">
+    <div class="wrap">
+      <div class="section-head reveal" style="max-width: 720px">
+        <span class="eyebrow">Website audit</span>
+        <h2>Find out what your website is <span class="accent">costing you.</span></h2>
+        <p class="lede">Most business websites leak customers quietly — slow pages, confusing layouts, no reason to trust, no clear next step. We tear yours down and tell you exactly what to fix, in plain English.</p>
+      </div>
+
+      <div class="tiers">
+        <div class="tier reveal">
+          <span class="eyebrow">Report card</span>
+          <div class="price">Free</div>
+          <p class="tier-sub">Delivered within 48 hours. No strings.</p>
+          <ul>
+            <li>Graded 5-point report card: first impression, mobile experience, speed, trust signals, lead capture</li>
+            <li>Your top 5 fixes, ranked by impact</li>
+            <li>Written in plain English — no jargon</li>
+          </ul>
+        </div>
+        <div class="tier featured reveal" style="--d:.08s">
+          <span class="eyebrow">Deep-dive teardown</span>
+          <div class="price">$149</div>
+          <p class="tier-sub">Everything in the report card, plus:</p>
+          <ul>
+            <li>Page-by-page analysis of your full site</li>
+            <li>Where visitors most likely drop off — and with analytics access, exactly where they do</li>
+            <li>Side-by-side comparison with your top local competitor</li>
+            <li>A prioritized fix roadmap you can hand to any developer — or have us build</li>
+            <li>15-minute walkthrough call</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="form-layout" style="margin-top: clamp(30px, 5vw, 50px)">
+        <div class="reveal">
+          <span class="eyebrow">How it works</span>
+          <ul class="perk-list">
+            <li><span class="tick">01</span><span><b>Send us your website.</b> Thirty seconds with the form — that's all we need.</span></li>
+            <li><span class="tick">02</span><span><b>We tear it down.</b> Design, mobile, speed, trust, and whether it actually turns visitors into customers.</span></li>
+            <li><span class="tick">03</span><span><b>Report in your inbox within 48 hours.</b> For deep-dives, we'll send a payment link and book your call.</span></li>
+          </ul>
+        </div>
+
+        <form class="form-card reveal" data-formspree="https://formspree.io/f/mqevwrab" data-mail-subject="Website audit request — MWOWDesigns.com" style="--d:.1s">
+          <div class="field">
+            <label for="a-name">Your name</label>
+            <input id="a-name" name="name" data-label="Name" type="text" required autocomplete="name" />
+          </div>
+          <div class="field">
+            <label for="a-email">Email</label>
+            <input id="a-email" name="email" data-label="Email" type="email" required autocomplete="email" />
+          </div>
+          <div class="field">
+            <label for="a-biz">Business name</label>
+            <input id="a-biz" name="business" data-label="Business" type="text" required />
+          </div>
+          <div class="field">
+            <label for="a-site">Your website</label>
+            <input id="a-site" name="website" data-label="Website" type="text" required placeholder="yourbusiness.com" />
+          </div>
+          <div class="field">
+            <label for="a-tier">Which audit?</label>
+            <select id="a-tier" name="tier" data-label="Audit tier">
+              <option>Free report card</option>
+              <option>Deep-dive teardown ($149)</option>
+              <option>Not sure — recommend one</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="a-about">Anything specific bothering you? (optional)</label>
+            <textarea id="a-about" name="about" data-label="Concerns" placeholder="e.g. 'we get visitors but no calls' or 'it looks dated on phones'"></textarea>
+          </div>
+          <button class="btn btn-sky" type="submit">Get my audit</button>
+          <p class="form-note">Free means free — no card, no follow-up spam. Deep-dives get a payment link after you submit.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap">
+      <span class="eyebrow" style="justify-content:center">Already know it needs a rebuild?</span>
+      <h2 class="reveal">Skip the diagnosis — get the cure.</h2>
+      <div class="hero-ctas reveal">
+        <a class="btn btn-sky" href="quote.html">Get a free quote</a>
+        <a class="btn btn-ghost" href="demo.html">Free homepage mockup →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap foot-inner">
+      <a class="wordmark" href="index.html">MWOW <span class="designs">Designs</span></a>
+      <span class="foot-tag">Make Websites Our Way™ · © <span id="yr"></span></span>
+      <ul class="foot-links">
+        <li><a href="audit.html">Free audit</a></li>
+        <li><a href="examples.html">Examples</a></li>
+        <li><a href="quote.html">Free quote</a></li>
+        <li><a href="demo.html">Free demo</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=3"></script>
+  <script data-goatcounter="https://mwowdesigns.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

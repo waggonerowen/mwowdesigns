@@ -1,4 +1,19 @@
-/* MWOW® shared behaviors: nav, reveals, marquee, tilt, process line, forms */
+/* MWOW® shared behaviors: theme toggle, nav, reveals, marquee, tilt, process line, forms */
+
+/* light/dark toggle — theme itself is applied by the inline <head> snippet before paint */
+const themeBtn = document.getElementById("theme-toggle");
+function paintThemeIcon() {
+  if (themeBtn) themeBtn.textContent = document.documentElement.dataset.theme === "light" ? "☾" : "☀";
+}
+if (themeBtn) {
+  themeBtn.addEventListener("click", () => {
+    const next = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+    document.documentElement.dataset.theme = next;
+    localStorage.setItem("mwow-theme", next);
+    paintThemeIcon();
+  });
+  paintThemeIcon();
+}
 
 const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

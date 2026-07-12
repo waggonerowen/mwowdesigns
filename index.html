@@ -5,10 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MWOW Designs — Make Websites Our Way</title>
   <meta name="description" content="MWOW Designs builds custom websites with real design opinions — 3D, motion, and zero templates. Free quote, free homepage mockup in 48 hours." />
+  <meta property="og:title" content="MWOW Designs — Make Websites Our Way" />
+  <meta property="og:description" content="Custom websites with 3D and motion — free audit, free quote, free homepage mockup in 48 hours." />
+  <meta property="og:image" content="https://mwowdesigns.com/img/hero-penthouse-1k.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=7" />
+  <script>document.documentElement.dataset.theme = localStorage.getItem("mwow-theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");</script>
+  <link rel="stylesheet" href="css/style.css?v=13" />
 </head>
 <body>
 
@@ -17,8 +23,10 @@
       <a class="wordmark" href="index.html">MWOW <span class="designs">Designs</span></a>
       <nav>
         <ul class="nav-links">
+          <li><a href="audit.html">Free audit</a></li>
           <li><a href="examples.html">Examples</a></li>
           <li><a href="demo.html">Free demo</a></li>
+          <li><button class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark mode">☀</button></li>
           <li><a class="btn btn-sky btn-sm" href="quote.html">Get a free quote</a></li>
         </ul>
       </nav>
@@ -48,10 +56,15 @@
       <h1>Websites that make people say <span class="accent">wow.</span></h1>
       <p class="lede">That's the standard. MWOW designs custom sites with real opinions — built with 3D and motion, engineered to win customers, launched fast.</p>
       <div class="hero-ctas">
-        <a class="btn btn-sky" href="quote.html">Get a free quote</a>
-        <a class="btn btn-ghost" href="demo.html">See a free demo →</a>
+        <a class="btn btn-sky" href="audit.html">Get a free website audit</a>
+        <a class="btn btn-ghost" href="quote.html">Get a free quote →</a>
       </div>
-      <p class="hero-note"><b>Free homepage mockup in 48 hours</b> · No templates · No purple gradients. Ever.</p>
+      <div class="deal-banner">
+        <span class="deal-tag">Launch deal</span>
+        <span class="deal-price"><s>$1,000</s>$750</span>
+        <span class="deal-copy">full custom website — while the deal lasts</span>
+      </div>
+      <p class="hero-note"><b>Free audit in 48 hours</b> · Free homepage mockup · No templates. Ever.</p>
     </div>
   </section>
 
@@ -207,7 +220,7 @@
   <!-- ============ CTA ============ -->
   <section class="cta-band">
     <div class="wrap">
-      <span class="eyebrow" style="justify-content:center">Free quote · Free mockup</span>
+      <span class="eyebrow" style="justify-content:center">Launch deal · Sites from <s>$1,000</s>&nbsp;$750</span>
       <h2 class="reveal">Ready to see your website — <span class="accent">our way?</span></h2>
       <div class="hero-ctas reveal">
         <a class="btn btn-sky" href="quote.html">Get a free quote</a>
@@ -228,7 +241,7 @@
     </div>
   </footer>
 
-  <script src="js/main.js?v=2"></script>
+  <script src="js/main.js?v=3"></script>
   <script src="js/hero-open.js?v=6"></script>
   <script data-goatcounter="https://mwowdesigns.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
