@@ -266,7 +266,7 @@ body.hero-live {
 }
 @media (max-width: 620px) {
   .hero-scroll {
-    height: 45svh;
+    height: 100svh;
   }
 }
 .hero-stage {
