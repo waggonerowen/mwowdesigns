@@ -169,7 +169,7 @@ p.lede {
   padding: 18px var(--pad-x);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 20px;
 }
 .wordmark {
