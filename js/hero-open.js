@@ -21,10 +21,11 @@
      snug INSIDE the glass with bezel visible, never near the keyboard */
   const SCREEN = { x0: 0.396, x1: 0.594, y0: 0.494, y1: 0.715 };
 
-  /* map image fractions to viewport pixels under object-fit: cover */
+  /* map image fractions to pixels under object-fit: cover — measured against
+     the zoomer box, which is the full stage on desktop but an inset card on phones */
   function screenRect() {
-    const vw = stage.clientWidth;
-    const vh = stage.clientHeight;
+    const vw = zoomer.clientWidth;
+    const vh = zoomer.clientHeight;
     const iw = photo.naturalWidth || 4096;
     const ih = photo.naturalHeight || 2294;
     const s = Math.max(vw / iw, vh / ih);

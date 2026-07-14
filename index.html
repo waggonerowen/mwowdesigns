@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
   <script>document.documentElement.dataset.theme = localStorage.getItem("mwow-theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");</script>
-  <link rel="stylesheet" href="css/style.css?v=13" />
+  <link rel="stylesheet" href="css/style.css?v=14" />
 </head>
 <body>
 
@@ -24,6 +24,8 @@
       <nav>
         <ul class="nav-links">
           <li><a href="audit.html"><span class="audit-long">Free audit</span><span class="audit-short">Audit</span></a></li>
+          <li><a href="examples.html">Examples</a></li>
+          <li><a href="demo.html">Free demo</a></li>
           <li><button class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark mode">☀</button></li>
           <li><a class="btn btn-sky btn-sm btn-quote" href="quote.html"><span class="quote-long">Get a free quote</span><span class="quote-short">Quote</span></a></li>
         </ul>
@@ -43,7 +45,7 @@
       </div>
       <div class="stage-veil" id="stage-veil" aria-hidden="true"></div>
       <span class="eyebrow stage-eyebrow">MWOW — Web design studio</span>
-      <div class="scroll-cue">Click or press any key to power on</div>
+      <div class="scroll-cue"><span class="cue-desktop">Click or press any key to power on</span><span class="cue-mobile">Tap the screen to power on</span></div>
     </div>
   </div>
 
@@ -240,7 +242,7 @@
   </footer>
 
   <script src="js/main.js?v=3"></script>
-  <script src="js/hero-open.js?v=6"></script>
+  <script src="js/hero-open.js?v=7"></script>
   <script data-goatcounter="https://mwowdesigns.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

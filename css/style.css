@@ -188,7 +188,7 @@ p.lede {
   font-weight: 700;
 }
 
-.quote-short, .audit-short { display: none; }
+.quote-short, .audit-short, .cue-mobile { display: none; }
 
 @media (max-width: 620px) {
   .quote-long { display: none; }
@@ -280,14 +280,13 @@ body.hero-live {
   inset: 0;
   will-change: transform;
 }
+/* on phones the photo becomes an inset card — sized via inset only, never
+   transform, because the zoom animation owns this element's transform */
 @media (max-width: 620px) {
   .zoomer {
-    width: 85%;
-    height: 85%;
-    inset: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    inset: 8% 4% 12% 4%;
+    border-radius: 16px;
+    overflow: hidden;
   }
 }
 .zoomer img {
@@ -348,12 +347,6 @@ body.hero-live {
   font-weight: 700;
   letter-spacing: 0.16em;
   text-shadow: 0 2px 22px rgba(0, 0, 0, 0.85);
-}
-@media (max-width: 620px) {
-  .stage-eyebrow {
-    font-size: clamp(1.8rem, 5.5vw, 3rem);
-    top: 35vh;
-  }
 }
 .hero-stage .scroll-cue,
 .stage-eyebrow { transition: opacity 0.4s; }
@@ -430,17 +423,6 @@ body.hero-live {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-}
-@media (max-width: 620px) {
-  .scroll-cue {
-    font-size: 0.65rem;
-    bottom: -35px;
-    letter-spacing: 0.15em;
-    gap: 6px;
-  }
-  .scroll-cue::after {
-    height: 30px;
-  }
 }
 .scroll-cue::after {
   content: "";
@@ -908,7 +890,7 @@ footer {
   .btn { padding: 12px 20px; font-size: 0.9rem; }
   .btn-sm { padding: 9px 16px; font-size: 0.8rem; }
 
-  .headline-section { padding: clamp(40px, 8vw, 70px) 0; }
+  .headline-section { padding: clamp(100px, 16vw, 130px) 0 clamp(50px, 9vw, 80px); }
   .hero-ctas { flex-wrap: wrap; gap: 10px; }
   .hero-ctas .btn { flex: 1; min-width: 140px; }
 
@@ -974,9 +956,29 @@ footer {
   .wordmark span.designs { display: none; }
   .theme-toggle { width: 38px; height: 38px; font-size: 1.1rem; padding: 0; }
 
+  /* hero: big readable studio line, cue tucked under the photo card.
+     width: max-content beats abs-pos shrink-to-fit so translateX centers truly */
+  .hero-stage .stage-eyebrow {
+    font-size: clamp(0.9rem, 4.5vw, 1.15rem);
+    letter-spacing: 0.12em;
+    top: 33vh;
+    width: max-content;
+  }
+  .hero-stage .stage-eyebrow::before { display: none; }
+  .hero-stage .scroll-cue {
+    font-size: 0.62rem;
+    letter-spacing: 0.18em;
+    gap: 6px;
+    bottom: 16px;
+    width: max-content;
+  }
+  .scroll-cue::after { height: 22px; }
+  .cue-desktop { display: none; }
+  .cue-mobile { display: inline; }
+
   .nav-inner { padding: 14px var(--pad-x); gap: 10px; }
 
-  .headline-section { padding: clamp(50px, 10vw, 80px) 0; }
+  .headline-section { padding: 100px 0 clamp(50px, 10vw, 80px); }
   .lede { font-size: 0.95rem; line-height: 1.6; }
 
   .hero-ctas { flex-direction: column; gap: 12px; }
