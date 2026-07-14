@@ -948,8 +948,8 @@ footer {
   .nav-links li:has(a[href="examples.html"]), .nav-links li:has(a[href="demo.html"]) { display: none; }
   .nav .btn-sm { padding: 4px 9px; font-size: 0.63rem; min-width: auto; line-height: 1.1; }
   .nav .btn-quote {
-    padding: 6px 10px;
-    font-size: 0.7rem;
+    padding: 6px 12px;
+    font-size: 0.71rem;
     background: transparent;
     color: rgba(12, 14, 18, 0.78);
     border: 1px solid rgba(12, 14, 18, 0.16);
