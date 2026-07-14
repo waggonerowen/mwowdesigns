@@ -280,6 +280,16 @@ body.hero-live {
   inset: 0;
   will-change: transform;
 }
+@media (max-width: 620px) {
+  .zoomer {
+    width: 85%;
+    height: 85%;
+    inset: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .zoomer img {
   position: absolute;
   inset: 0;
@@ -341,8 +351,8 @@ body.hero-live {
 }
 @media (max-width: 620px) {
   .stage-eyebrow {
-    font-size: clamp(1.6rem, 5vw, 2.8rem);
-    top: 18vh;
+    font-size: clamp(1.8rem, 5.5vw, 3rem);
+    top: 35vh;
   }
 }
 .hero-stage .scroll-cue,
@@ -424,7 +434,7 @@ body.hero-live {
 @media (max-width: 620px) {
   .scroll-cue {
     font-size: 0.65rem;
-    bottom: -55px;
+    bottom: -35px;
     letter-spacing: 0.15em;
     gap: 6px;
   }
@@ -898,7 +908,7 @@ footer {
   .btn { padding: 12px 20px; font-size: 0.9rem; }
   .btn-sm { padding: 9px 16px; font-size: 0.8rem; }
 
-  .headline-section { padding: clamp(60px, 12vw, 100px) 0; }
+  .headline-section { padding: clamp(40px, 8vw, 70px) 0; }
   .hero-ctas { flex-wrap: wrap; gap: 10px; }
   .hero-ctas .btn { flex: 1; min-width: 140px; }
 
