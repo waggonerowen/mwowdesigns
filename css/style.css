@@ -902,8 +902,8 @@ footer {
   .feature-glyph svg { width: 28px; height: 28px; }
 
   .tilt-inner { padding: clamp(20px, 4vw, 28px); }
-  .step { padding: clamp(24px, 4vw, 32px) 0; }
-  .step-num { font-size: 2rem; }
+  /* keep left clearance for the number circles + progress line */
+  .step { padding: 0 0 44px 64px; }
 
   .marquee { padding: clamp(30px, 6vw, 50px) 0; }
   .marquee-track { font-size: clamp(1.8rem, 5vw, 2.8rem); }
@@ -984,11 +984,6 @@ footer {
   .hero-ctas { flex-direction: column; gap: 12px; }
   .hero-ctas .btn { width: 100%; min-height: 48px; display: flex; align-items: center; justify-content: center; }
 
-  .process { gap: 20px; }
-  .step { gap: 12px; }
-  .step-num { font-size: 1.6rem; }
-
-  .mock-screen { min-height: 300px; }
   .mock-meta { margin-top: 12px; }
   .mock-meta h3 { font-size: 1rem; }
   .mock-meta span { font-size: 0.8rem; }
