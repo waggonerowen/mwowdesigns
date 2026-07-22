@@ -14,7 +14,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono&display=swap" rel="stylesheet" />
   <script>document.documentElement.dataset.theme = localStorage.getItem("mwow-theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");</script>
-  <link rel="stylesheet" href="css/style.css?v=15" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="css/style.css?v=18" />
 </head>
 <body>
 
@@ -24,7 +25,7 @@
       <nav>
         <ul class="nav-links">
           <li><a href="audit.html"><span class="audit-long">Free audit</span><span class="audit-short">Audit</span></a></li>
-          <li><a href="examples.html">Examples</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
           <li><a href="demo.html">Free demo</a></li>
           <li><button class="theme-toggle" id="theme-toggle" aria-label="Switch light or dark mode">☀</button></li>
           <li><a class="btn btn-sky btn-sm btn-quote" href="quote.html"><span class="quote-long">Get a free quote</span><span class="quote-short">Quote</span></a></li>
@@ -59,11 +60,11 @@
         <a class="btn btn-sky" href="audit.html">Get a free website audit</a>
         <a class="btn btn-ghost" href="quote.html">Get a free quote →</a>
       </div>
-      <div class="deal-banner">
+      <a class="deal-banner" href="pricing.html">
         <span class="deal-tag">Launch deal</span>
-        <span class="deal-price"><s>$1,000</s>$750</span>
-        <span class="deal-copy">full custom website — while the deal lasts</span>
-      </div>
+        <span class="deal-row"><span class="deal-price"><s>$1,000</s> $750</span><span class="deal-copy">one-time — you own it</span></span>
+        <span class="deal-row"><span class="deal-price"><s>$85</s> $70<small>/mo</small></span><span class="deal-copy">monthly — hosting &amp; edits included →</span></span>
+      </a>
       <p class="hero-note"><b>Free audit in 48 hours</b> · Free homepage mockup · No templates. Ever.</p>
     </div>
   </section>
@@ -217,6 +218,33 @@
     </div>
   </section>
 
+  <!-- ============ PRICING TEASER ============ -->
+  <section class="section" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">Pricing</span>
+        <h2>One website. Two ways to pay.</h2>
+        <p class="lede">Own it outright, or let us run it for you month to month. Same custom design either way — you decide how to pay.</p>
+      </div>
+      <div class="tiers">
+        <div class="tier reveal">
+          <span class="eyebrow">Own it</span>
+          <div class="price"><span class="price-from">from</span><s>$1,000</s> $750</div>
+          <p class="tier-sub">One-time · launch deal · you own everything</p>
+        </div>
+        <div class="tier reveal" style="--d:.08s">
+          <span class="eyebrow">Monthly</span>
+          <div class="price"><span class="price-from">from</span><s>$85</s> $70<span style="font-size:.45em; color:var(--stone)">/mo</span></div>
+          <p class="tier-sub">Hosting, edits &amp; support included · nothing big up front</p>
+        </div>
+      </div>
+      <div class="hero-ctas reveal" style="margin-top:34px">
+        <a class="btn btn-sky" href="pricing.html">See full pricing</a>
+        <a class="btn btn-ghost" href="quote.html">Get a free quote →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ CTA ============ -->
   <section class="cta-band">
     <div class="wrap">
@@ -232,8 +260,10 @@
   <footer>
     <div class="wrap foot-inner">
       <a class="wordmark" href="index.html">MWOW <span class="designs">Designs</span></a>
-      <span class="foot-tag">Make Websites Our Way™ · © <span id="yr"></span></span>
+      <span class="foot-tag">Make Websites Our Way™ · <a href="mailto:MWOWDesigns@gmail.com" style="color:inherit">MWOWDesigns@gmail.com</a> · © <span id="yr"></span></span>
       <ul class="foot-links">
+        <li><a href="audit.html">Free audit</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
         <li><a href="examples.html">Examples</a></li>
         <li><a href="quote.html">Free quote</a></li>
         <li><a href="demo.html">Free demo</a></li>
