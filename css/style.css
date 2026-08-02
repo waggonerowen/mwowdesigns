@@ -976,22 +976,42 @@ footer {
   .grid-3, .show-grid { grid-template-columns: 1fr; }
   .nav-inner { padding: 10px 10px; gap: 3px; }
   .nav-links { gap: 1px; flex-wrap: nowrap; }
-  .nav-links a:not(.btn) { padding: 5px 8px; font-size: 0.68rem; }
+  .nav .nav-links a:not(.btn) { padding: 5px 8px; font-size: 0.68rem; }
   .nav-links a:not(.btn):not([href="audit.html"]) { display: none; }
   .nav-links li:has(a[href="examples.html"]), .nav-links li:has(a[href="demo.html"]) { display: none; }
   .nav .btn-sm { padding: 4px 9px; font-size: 0.63rem; min-width: auto; line-height: 1.1; }
+  /* Audit + Quote sit side by side — render them as one matched pair of pills */
+  .nav .nav-links a[href="audit.html"],
   .nav .btn-quote {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 66px;
     padding: 6px 12px;
     font-size: 0.71rem;
+    font-weight: 600;
+    line-height: 1.25;
+    border-radius: 999px;
     background: transparent;
     color: rgba(12, 14, 18, 0.78);
     border: 1px solid rgba(12, 14, 18, 0.16);
     box-shadow: none;
   }
+  .nav .nav-links a[href="audit.html"]:hover,
   .nav .btn-quote:hover {
     background: rgba(12, 14, 18, 0.04);
     border-color: rgba(12, 14, 18, 0.5);
     transform: none;
+  }
+  /* light theme fills .btn-sky solid (line 37) — at this breakpoint Quote is a
+     plain pill instead, so it matches Audit. Same specificity, later = wins. */
+  :root[data-theme="light"] .nav .btn-quote {
+    background: transparent;
+    color: rgba(12, 14, 18, 0.78);
+  }
+  :root[data-theme="light"] .nav .btn-quote:hover {
+    background: rgba(12, 14, 18, 0.04);
   }
   .wordmark { font-size: 0.9rem; flex-shrink: 0; }
   .wordmark span.designs { display: none; }
